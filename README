@@ -1,0 +1,5 @@
+Run using command drracket assignment4.ss
+Ctrl + R to compile
+And than (eval-prog "Program String in Scheme") to use.
+
+For eg. (eval-prog "(+ (- 5 2)(* 9 2))") will result in 5-2 + 9*2 =3+18 = 21

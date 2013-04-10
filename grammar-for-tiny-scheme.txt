@@ -1,0 +1,15 @@
+
+ws :- whitespaces
+number :- one or more digits
+identifier :- a letter followed by zero or more letters or digits
+exps :- Zero or more exp's with whitespaces between them
+exp :- number | identifier | '(' + exp ws exp ')' | 
+       '(' - exp ws exp ')' | '(' * exp ws exp ')' |
+       '(' = exp ws exp ')' | '(' let '(' identifier  exp ')' exp ')' | 
+       '(' if exp ws exp ws exp ')' | 
+       '(' identifier  exps ')'
+identifiers :- 0 or more identifiers   
+fundecls  :- Zero or more fundecl
+fundecl :- '(' define '(' identifiers ')' exp ')'
+program :- fundecls  ws exp
+
